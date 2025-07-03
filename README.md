@@ -1,61 +1,111 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Sklep Komputerowy - Zaawansowany Projekt Laravel
+O Projekcie
+Sklep Komputerowy to w pełni funkcjonalna aplikacja e-commerce, stworzona jako kompleksowy projekt demonstrujący zaawansowane możliwości frameworka Laravel. Aplikacja została zbudowana od podstaw, kładąc nacisk na czystą architekturę (MVC z warstwą serwisów), bezpieczeństwo oraz nowoczesny i interaktywny interfejs użytkownika.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Projekt obejmuje zarówno bogatą w funkcje, publiczną część sklepu dla klientów, jak i rozbudowany, bezpieczny panel administratora do zarządzania całym serwisem.
 
-## About Laravel
+🚀 Kluczowe Funkcjonalności
+Część Publiczna (dla Klientów)
+Strona Główna: Dynamiczna strona z sekcją "Hero", wyszukiwarką, wyróżnionymi kategoriami oraz listą najnowszych i losowo polecanych produktów, które odświeżają się automatycznie.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Katalog Produktów: Przejrzysta lista produktów z zaawansowanymi opcjami wyszukiwania tekstowego i filtrowania po kategoriach.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Szczegóły Produktu: Profesjonalna strona produktu z galerią, szczegółowym opisem, specyfikacją techniczną i sekcją opinii, zorganizowana w interaktywnych zakładkach.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+System Rejestracji i Logowania: Pełna obsługa kont użytkowników oparta na pakiecie Laravel Breeze, z rozróżnieniem ról (klient/administrator) i dedykowanymi panelami.
 
-## Learning Laravel
+Koszyk na Zakupy: Pełna funkcjonalność koszyka oparta na sesji, z możliwością dodawania, aktualizacji ilości i usuwania produktów.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Składanie Zamówień: Uproszczony proces składania zamówienia, który zapisuje transakcję w bazie danych, aktualizuje stany magazynowe i obsługuje logikę zwrotów przy anulowaniu.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Funkcje Interaktywne (AJAX): Możliwość dodawania produktów do ulubionych i koszyka bez przeładowywania strony, z dynamicznymi powiadomieniami.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Panel Administratora (Intranet)
+Profesjonalny Dashboard: Kokpit z kluczowymi statystykami (liczba produktów, klientów), wykresem sprzedaży z ostatnich 7 dni oraz podglądem najnowszych zamówień i opinii.
 
-## Laravel Sponsors
+Zarządzanie Produktami (CRUD): Pełny system do tworzenia, odczytu, aktualizacji i "miękkiego usuwania" produktów, z paginacją i wyszukiwarką.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Zarządzanie Kategoriami (CRUD): Moduł do zarządzania kategoriami, ich opisami (z edytorem WYSIWYG) oraz ikonami.
 
-### Premium Partners
+Zaawansowany System Specyfikacji: Inteligentny system, w którym atrybuty są ściśle powiązane z kategoriami. Formularz produktu dynamicznie dostosowuje dostępne pola specyfikacji w zależności od wybranej kategorii.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Moderacja Opinii: Panel do przeglądania wszystkich opinii, z możliwością ich ukrywania lub trwałego usuwania.
 
-## Contributing
+Zarządzanie Zamówieniami: Lista wszystkich zamówień z filtrowaniem po statusie oraz szczegółowy podgląd każdego zamówienia z opcją zmiany jego statusu.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+🛠️ Technologie i Techniki
+Backend: Laravel, PHP, Architektura MVC z warstwą Serwisów
 
-## Code of Conduct
+Frontend: HTML5, CSS3, JavaScript (Vanilla JS), Bootstrap 5, Bootstrap Icons
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Baza Danych: MySQL, Eloquent ORM, Transakcje Bazodanowe
 
-## Security Vulnerabilities
+Kluczowe Koncepcje: Routing, Middleware, Walidacja, Autentykacja (Laravel Breeze), AJAX (Fetch API), View Composers, "Lazy Loading" obrazów.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Narzędzia Zewnętrzne: Composer, NPM, TinyMCE (edytor WYSIWYG), Chart.js (wykresy).
 
-## License
+⚙️ Instalacja i Uruchomienie
+Aby uruchomić projekt lokalnie, postępuj zgodnie z poniższymi krokami:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Sklonuj repozytorium:
+
+Bash
+
+git clone [adres-twojego-repozytorium]
+cd [nazwa-folderu]
+Zainstaluj zależności PHP:
+
+Bash
+
+composer install
+Zainstaluj zależności JavaScript:
+
+Bash
+
+npm install
+Skonfiguruj plik środowiskowy:
+Skopiuj plik .env.example i zmień jego nazwę na .env. W pliku .env uzupełnij dane dostępowe do Twojej lokalnej bazy danych.
+
+Fragment kodu
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=SklepKomputerowy
+DB_USERNAME=root
+DB_PASSWORD=
+Wygeneruj klucz aplikacji:
+
+Bash
+
+php artisan key:generate
+Zaimportuj bazę danych:
+Stwórz pustą bazę danych o nazwie, którą podałeś w pliku .env (np. SklepKomputerowy). Zaimportuj do niej strukturę i dane z dołączonego pliku database_backup/SklepKomputerowy.sql.
+
+Uruchom migracje Laravela:
+Ta komenda stworzy tabele potrzebne do działania wewnętrznych systemów Laravela (sesje itp.).
+
+Bash
+
+php artisan migrate
+Skompiluj zasoby frontendu:
+
+Bash
+
+npm run dev
+Uruchom serwer deweloperski:
+W osobnym oknie terminala wykonaj komendę:
+
+Bash
+
+php artisan serve
+Aplikacja będzie dostępna pod adresem http://127.0.0.1:8000.
+
+🔑 Dane Logowania Administratora
+Email: admin@gmail.com
+Hasło: admin123
+
+🔑 Dane Logowania Użytkownika
+Email: uzytkownik@gmail.com
+Hasło: uzytkownik
+
